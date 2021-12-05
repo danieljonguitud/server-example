@@ -17,7 +17,7 @@ impl Server {
         let listener = TcpListener::bind(&self.address).unwrap();
 
         loop {
-
+            listener.accept();
         }
     }
 }
